@@ -1,2 +1,2 @@
 # BlueCMS
- BlueCMS Blog and Magazine
+ BlueCMS, Laravel Blog and Magazine CMS
