@@ -1,18 +1,5 @@
 {
-    "name": "mrlast/bluecms",
-    "type": "framework",
-    "description": "BlueCMS - The Laravel Framework CMS.",
-    "keywords": ["CMS","laravel"],
-    "homepage": "https://github.com/01mrlast/BlueCMS/",
-    "authors": [
-        {
-            "name": "Samson last",
-            "email": "samson@mrlast.com",
-            "homepage": "http://mrlast.com",
-            "role": "Developer"
-        }
-    ],
-    "license": "MIT",
+   
     "require": {
         "php": "^7.2.5",
         "fideloper/proxy": "^4.2",
@@ -56,6 +43,20 @@
             "Tests\\": "tests/"
         }
     },
+     "name": "mrlast/bluecms",
+    "type": "framework",
+    "description": "BlueCMS - The Laravel Framework CMS.",
+    "keywords": ["CMS","laravel"],
+    "homepage": "https://github.com/01mrlast/BlueCMS/",
+    "authors": [
+        {
+            "name": "Samson last",
+            "email": "samson@mrlast.com",
+            "homepage": "http://mrlast.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
