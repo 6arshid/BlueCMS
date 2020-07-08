@@ -1,2 +1,2 @@
 # BlueCMS
- BlueCMS, Laravel Blog and Magazine CMS
+ BlueCMS, <b>Laravel 7</b> Blog and Magazine CMS
