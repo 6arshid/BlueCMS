@@ -1,9 +1,9 @@
 {
-    "name": "laravel/laravel",
+    "name": "01mrlast/bluecms",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "BlueCMS - The Laravel Framework CMS.",
     "keywords": [
-        "framework",
+        "cms",   "bluecms",
         "laravel"
     ],
     "license": "MIT",
