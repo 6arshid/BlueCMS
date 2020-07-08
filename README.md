@@ -7,7 +7,7 @@ git clone https://github.com/01mrlast/BlueCMS BlueCMS
 
 cd BlueCMS
 
-composer install
+composer update
 
 php artisan migrate
 
