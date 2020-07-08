@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'ArticlesController@get_all');
 Route::get('/robots/{id}', 'RobotsController@get_content');
 
-Route::get('/p/{id}/{article}', 'ArticlesController@get_post_detail');
+Route::get('/p/{id}', 'ArticlesController@get_post_detail');
 Route::get('/pages/{page}', 'PagesContoller@get_page_detail');
 Route::get('/product/{id}', 'ProductsController@get_product_detail');
 Route::get('/shop', 'ProductsController@get_all');

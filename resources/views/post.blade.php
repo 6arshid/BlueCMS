@@ -21,6 +21,8 @@
                     {!!$article->content!!}
                 </div>
             </div>
+            @include('layouts.comments')
+
         </div>
     </div>
 </div>

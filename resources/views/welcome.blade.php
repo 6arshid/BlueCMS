@@ -11,64 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <style>
-    html,
-    body {
-        background-color: #fff;
-        color: #636b6f;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 200;
-        margin: 0;
-    }
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/custom.css">
 
 
-
-    .flex-center {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .position-ref {
-        position: relative;
-    }
-
-    .top-right {
-        position: absolute;
-        right: 10px;
-        top: 18px;
-    }
-
-    .content {
-        text-align: center;
-    }
-
-    .title {
-        font-size: 84px;
-    }
-
-    .links>a {
-        color: #636b6f;
-        padding: 0 25px;
-        font-size: 13px;
-        font-weight: 600;
-        letter-spacing: .1rem;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    .m-b-md {
-        margin-bottom: 30px;
-    }
-
-    .avatar_logo img {
-        border-radius: 50%;
-        width: 13%;
-    }
-    </style>
 </head>
 
 <body>
@@ -109,7 +55,7 @@
             <div class="m-b-md">
                 <h2> <a href="/">Blue CMS</h2>
                 <div class="avatar_logo">
-                    <a href="/"><img src="/uploads/user/mrlast.jpg" alt="Avatar"></a>
+                    <a href="/"><img src="/uploads/logo.jpg" alt="Avatar"></a>
                 </div>
             </div>
 
@@ -152,13 +98,12 @@
                         <div class="card" style="width: 18rem;">
                             <img src="/uploads/images/{{$post->image}}" class="card-img-top" width="100%">
                             <div class="card-body">
-                                <h1 class="card-title"> <a href="/p/{{$post->id}}/{{$post->title}}"
-                                        class="">{{$post->title}}</a> </h1>
+                                <h1 class="card-title"> <a href="/p/{{$post->id}}" class="">{{$post->title}}</a> </h1>
                                 <p class="card-text"> @php
 
                                     echo Str::substr($post->content, 0, 371);
                                     @endphp</p>
-                                <a href="/p/{{$post->title}}" class="btn btn-primary">Go somewhere</a>
+                                <a href="/p/{{$post->id}}" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>

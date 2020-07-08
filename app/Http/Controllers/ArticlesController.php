@@ -218,8 +218,7 @@ class ArticlesController extends Controller
     public function get_post_detail($id,Article $article, Comment $comment)
     {
        
-
-        // $article = Article::find($id);
+        $article = Article::find($id);
         $rows = Article::where('id', '=', $id)->first();
 
         $image = $this->image_checker($article['image']);

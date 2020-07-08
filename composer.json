@@ -1,12 +1,18 @@
 {
-    "name": "laravel/laravel",
-    "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": [
-        "framework",
-        "laravel"
-    ],
+    "name": "mrlast/blue-cms",
+    "type": "framework",
+    "description": "BlueCMS - The Laravel Framework CMS.",
+    "keywords": ["CMS","laravel"],
+    "homepage": "https://github.com/01mrlast/BlueCMS/",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Samson last",
+            "email": "samson@mrlast.com",
+            "homepage": "http://mrlast.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^7.2.5",
         "fideloper/proxy": "^4.2",

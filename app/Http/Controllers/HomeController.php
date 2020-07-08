@@ -148,7 +148,7 @@ class HomeController extends Controller
 
         $last_id = $data->id;
 
-        $show_article = "/p/" . $last_id .$request['title'];
+        $show_article = "/p/" . $last_id . $request['title'];
         return redirect("$show_article");
     }
     public function send_comment(Request $request, Article $article)
@@ -165,7 +165,7 @@ class HomeController extends Controller
             'comment' => $request['comment'],
 
         ]);
-        return redirect("/p/$article_id/#comment")->with('success', trans('sentence.Hoorayycsr'));
+        return back()->with('success', trans('sentence.Hoorayycsr'));
     }
 
     public function user_setting()
