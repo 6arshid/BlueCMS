@@ -9,7 +9,9 @@ cd BlueCMS
 
 composer update
 
-type .env.example > .env
+cp .env.example .env
+
+php artisan key:generate
 
 php artisan migrate
 
