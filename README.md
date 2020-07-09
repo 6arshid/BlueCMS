@@ -1,8 +1,19 @@
 # BlueCMS
  BlueCMS, <b>Laravel 7</b> Blog and Magazine CMS<br>
  
- <h1><b>Laravel</b> Simple Blog and Magazine , SHOP , Portfolio CMS - <b>blueCMS</b></h1>
+ <h1><b>Laravel</b> Simple Blog and Magazine , SHOP , Portfolio CMS - <b>BlueCMS</b></h1>
  
+ 
+ 
+<b>BlueCMS</b> give you :
+
+* `Add Article`
+* `Add Product`
+* `Add Portfolio` 
+* `CV` 
+* `Unlimited Page` 
+
+
 git clone https://github.com/01mrlast/BlueCMS BlueCMS
 
 cd BlueCMS
