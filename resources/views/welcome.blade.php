@@ -11,6 +11,7 @@
 <div>
     <p>
         {{$setting->description}}
+        {{$setting->homepage_txt}}
 
     </p>
 

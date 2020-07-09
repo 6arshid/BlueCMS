@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<title> {{$rows->title}}</title>
 
 @section('content')
 

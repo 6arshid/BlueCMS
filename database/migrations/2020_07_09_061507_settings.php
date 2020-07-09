@@ -16,13 +16,13 @@ class Settings extends Migration
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
             $table->string('title')->default('my web site');
-            $table->string('description')->default('i make this website , my personal website its good')->nullable();
+            $table->string('description')->default('personal website about me')->nullable();
             $table->string('site_url')->nullable();
             $table->longText('tags')->nullable();;
             $table->string('email_send')->nullable();;
             $table->string('email_received')->nullable();
             $table->string('lang')->nullable();
-            $table->string('homepage_txt')->default('hello world !')->nullable();
+            $table->string('homepage_txt')->default('Hello World ! Im a blueCMS, from Laravel! Hello World ! I had high security and speed , Made for the core of professional sites,you can write for me controller or model and very easy for startup ! hello world !')->nullable();
 
             $table->timestamps();
         });

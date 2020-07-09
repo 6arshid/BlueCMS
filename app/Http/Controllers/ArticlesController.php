@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
 
 
 class ArticlesController extends Controller
@@ -169,10 +170,23 @@ class ArticlesController extends Controller
         if(empty($setting)){
             Setting::create([
                 'title' => 'my web site',
-                'description' => 'i make this website , my personal website its good',
-                'homepage_txt' => 'my web sit'    
+                "description' => 'i make this website , my personal website its good <br>for change text and login to 
+                admin <br>
+                email/password: hi@blue.cms",
+                'homepage_txt' => 'my web site'    
         
             ]);
+            User::create([
+                'name' => 'bluecms',
+                'email' => 'hi@blue.cms',
+                'password' => Hash::make('hi@blue.cms'),
+                'user_name' => 'admin',
+                'language'=>'en',
+                'is_admin'=>'1',
+
+            ]);
+            
+
         }
         return view('welcome', compact('article','menus','setting'));
     }
