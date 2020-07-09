@@ -8,6 +8,7 @@ use App\Attribute;
 use App\Product;
 use App\Menu;
 use App\Page;
+use App\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
@@ -127,7 +128,7 @@ class AdminController extends Controller
     }
     public function add_new_post(Category $Category)
     {
-        $categories =  Category::get();
+        $categories =  Category::get()->first;
 
         return view('admin.posts.add_new_post', compact('categories'));
     }
@@ -489,5 +490,30 @@ class AdminController extends Controller
     {
         page::where('id', '=', $id)->delete();
         return redirect('/admin/pages/show_all_pages')->with('success', 'your post deleted !');
+    }
+    public function show_setting(Setting $setting){
+        $setting_data =  Setting::get();
+
+        return view('admin.setting',compact('setting_data'));
+    }
+    public function add_setting_form(Setting $setting,Request $request){
+
+        return view('admin.add_setting');
+
+    }
+
+        public function add_setting(Setting $setting,Request $request){
+        $setting_data = Setting::create([
+            'title' => $request['title'],
+            'description' =>  $request['description'],
+            'site_url' => $request['site_url'],
+            'tags' => $request['tags'],
+            'email_send' => $request['email_send'],
+            'email_received' => $request['email_received'],
+            'lang' => $request['lang'],
+
+        ]);
+
+        return view('admin.setting',compact('setting_data'));
     }
 }

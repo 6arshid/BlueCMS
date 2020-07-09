@@ -33,7 +33,7 @@
                         <li>
                             <a href="/admin/pages/show_all">Show All Pages</a>
                         </li>
-                     
+
 
                     </ul>
                 </li>
@@ -64,7 +64,7 @@
                     <a href="/admin/menus/add_new_menu">Menus</a>
                 </li>
                 <li>
-                    <a href="#">Setting</a>
+                    <a href="/admin/setting">Setting</a>
                 </li>
             </ul>
 

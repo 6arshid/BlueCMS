@@ -15,7 +15,7 @@ class Menus extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->default('Product title');
+            $table->string('title')->default('Menu Name / Category');
             $table->string('url')->nullable();
             $table->string('icon')->nullable();
             $table->string('color')->nullable();

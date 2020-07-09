@@ -15,10 +15,15 @@
                     @endif
 
 
+@php
 
+
+var_dump($setting_data);
+
+@endphp
                     @if (auth()->check())
                     @if (auth()->user()->is_admin === 1)
-                    Hello Admin You must click <a href="/admin/home">here</a> for manage website 
+                    Hello Admin You must click <a href="/admin/home">here</a> for manage website
                     @else
                     Hello standard user
                     @endif

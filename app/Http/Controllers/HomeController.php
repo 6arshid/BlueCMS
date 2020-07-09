@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Article;
 use App\Comment;
 use App\Reaction;
+use App\Setting;
 use App\User;
 use Illuminate\Http\Request;
 use Intervention\Image\ImageManagerStatic as Image;
@@ -51,8 +52,12 @@ class HomeController extends Controller
     public function index()
     {
         //    $x = Spotify::searchTracks('Closed on Sunday')->get();
+        $setting_data =  Setting::get()->first();
+        if($setting_data == null){
+            echo "You must go to <a href='/admin/add_setting'>this address </a>for config your website";
+        }
 
-        return view('home');
+        return view('home',compact('setting_data'));
     }
     public function wall()
     {

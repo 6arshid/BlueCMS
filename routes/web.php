@@ -122,3 +122,6 @@ Route::get('/admin/pages/show_all', 'AdminController@show_all_pages')->middlewar
 Route::get('/admin/pages/edit_page/{id}', 'AdminController@page_edit_byid')->middleware('is_admin');
 Route::patch('/admin/update_pages_byid/{id}', 'AdminController@update_page_byid')->middleware('is_admin');
 Route::get('/admin/pages/delete_page/{id}', 'AdminController@deleted_pages_byid')->middleware('is_admin');
+//Other//
+Route::get('/admin/setting', 'AdminController@show_setting')->middleware('is_admin');
+Route::get('/admin/add_setting', 'AdminController@add_setting_form');
