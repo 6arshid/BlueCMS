@@ -22,6 +22,8 @@
 
 * `composer update`
 
+* `composer global require "laravel/installer=~1.2"`
+
 * `cp .env.example .env`
 
 * `php artisan key:generate`
