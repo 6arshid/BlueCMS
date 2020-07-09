@@ -13,6 +13,7 @@
 * `CV` 
 * `Unlimited Page` 
 * `And easy <b>Laravel</b>` 
+<b>For Install BlueCMS</b> add this commend to your terminal  :
 
 * ` git clone https://github.com/01mrlast/BlueCMS BlueCMS`
 
