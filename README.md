@@ -1,7 +1,7 @@
 # BlueCMS
  BlueCMS, <b>Laravel 7</b> Blog and Magazine CMS<br>
  
- 
+ <h1><b>Laravel</b> Simple Blog and Magazine , SHOP , Portfolio CMS - <b>blueCMS</b></h1>
  
 git clone https://github.com/01mrlast/BlueCMS BlueCMS
 
