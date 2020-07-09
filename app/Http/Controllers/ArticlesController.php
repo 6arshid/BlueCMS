@@ -167,35 +167,29 @@ class ArticlesController extends Controller
         $article =  Article::orderBy('id', 'DESC')->paginate(9);
         $menus =  Menu::orderBy('id', 'DESC')->paginate(15);;
         $setting =  Setting::get()->first();
-        if(empty($setting)){
+        if (empty($setting)) {
             Setting::create([
                 'title' => 'my web site',
-                "description' => 'i make this website , my personal website its good <br>for change text and login to 
-                admin <br>
-                email/password: hi@blue.cms",
-                'homepage_txt' => 'my web site'    
-        
+                "description" => "i make this website , my personal website its good"
             ]);
             User::create([
                 'name' => 'bluecms',
                 'email' => 'hi@blue.cms',
                 'password' => Hash::make('hi@blue.cms'),
                 'user_name' => 'admin',
-                'language'=>'en',
-                'is_admin'=>'1',
+                'language' => 'en',
+                'is_admin' => '1',
 
             ]);
-            
-
         }
-        return view('welcome', compact('article','menus','setting'));
+        return view('welcome', compact('article', 'menus', 'setting'));
     }
     public function get_all_posts()
     {
         $article =  Article::orderBy('id', 'DESC')->paginate(9);
         $menus =  Menu::orderBy('id', 'DESC')->paginate(15);
 
-        return view('blog', compact('article','menus'));
+        return view('blog', compact('article', 'menus'));
     }
     public function file_get_contents_curl($url)
     {
@@ -245,9 +239,9 @@ class ArticlesController extends Controller
         return redirect('/');
     }
 
-    public function get_post_detail($id,Article $article, Comment $comment)
+    public function get_post_detail($id, Article $article, Comment $comment)
     {
-       
+
         $article = Article::find($id);
         $rows = Article::where('id', '=', $id)->first();
 

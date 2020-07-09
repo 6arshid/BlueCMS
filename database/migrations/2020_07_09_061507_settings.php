@@ -14,6 +14,9 @@ class Settings extends Migration
     public function up()
     {
         Schema::create('settings', function (Blueprint $table) {
+
+
+            $homepage_txt = "";
             $table->id();
             $table->string('title')->default('my web site');
             $table->string('description')->default('personal website about me')->nullable();
@@ -22,7 +25,13 @@ class Settings extends Migration
             $table->string('email_send')->nullable();;
             $table->string('email_received')->nullable();
             $table->string('lang')->nullable();
-            $table->string('homepage_txt')->default('Hello World ! Im a blueCMS, from Laravel! Hello World ! I had high security and speed , Made for the core of professional sites,you can write for me controller or model and very easy for startup ! hello world !')->nullable();
+            $table->longText('homepage_txt')->default("Hello World  Im a blueCMS <br>
+                       from Laravel       <br>     Hello World     
+                       <br>    I had high security and speed       <br> 
+                               Made for the core of professional sites     <br> 
+                                        you can write for me controller or model and very easy for startup      <br> 
+                                                 for change text and login to admin     <br> 
+                                                          email  password hi@blue.cms")->nullable();
 
             $table->timestamps();
         });
@@ -36,6 +45,5 @@ class Settings extends Migration
     public function down()
     {
         Schema::dropIfExists('settings');
-
     }
 }
