@@ -33,5 +33,5 @@
 
 <br><br>
 
-[Laravel](https://github.com/laravel/laravel)|
+[Laravel](https://github.com/laravel/laravel)  |
 [BlueCMS](https://github.com/01mrlast/BlueCMS)
