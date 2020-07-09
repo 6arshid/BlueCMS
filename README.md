@@ -40,9 +40,11 @@ after refresh see fixed site.
 
 ![BlueCMS](public/uploads/blue1.jpg)
 
-enjoy from [Laravel](https://github.com/laravel/laravel)  /
+* `enjoy from [Laravel](https://github.com/laravel/laravel)  /
 [BlueCMS](https://github.com/01mrlast/BlueCMS)
- my friend .
+ my friend .`
+
+
 
 
 
