@@ -38,5 +38,5 @@
 [Laravel](https://github.com/laravel/laravel)  |
 [BlueCMS](https://github.com/01mrlast/BlueCMS)
 
-![BlueCMS](public/uploads/blue (2).jpg)
-![BlueCMS](public/uploads/blue (1).jpg)
+![BlueCMS](public/uploads/blue0.jpg)
+![BlueCMS](public/uploads/blue1.jpg)
