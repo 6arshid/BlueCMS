@@ -20,9 +20,9 @@
 
 * `cd BlueCMS`
 
-* `composer update`
-
 * `composer global require "laravel/installer=~1.2"`
+
+* `composer update`
 
 * `cp .env.example .env`
 
