@@ -37,3 +37,7 @@
 
 [Laravel](https://github.com/laravel/laravel)  |
 [BlueCMS](https://github.com/01mrlast/BlueCMS)
+
+
+
+(https://img.shields.io/docker/build/rssbridge/rss-bridge.svg?logo=docker)](https://hub.docker.com/r/rssbridge/rss-bridge/)
