@@ -13,21 +13,22 @@
 * `CV` 
 * `Unlimited Page` 
 * `And easy <b>Laravel</b>` 
+<br>
 <b>For Install BlueCMS</b> add this commend to your terminal  :
 
 * ` git clone https://github.com/01mrlast/BlueCMS BlueCMS`
 
-cd BlueCMS
+* `cd BlueCMS`
 
-composer update
+* `composer update`
 
-cp .env.example .env
+* `cp .env.example .env`
 
-php artisan key:generate
+* `php artisan key:generate`
 
-php artisan migrate
+* `php artisan migrate`
 
-php artisan serve
+* `php artisan serve`
 
 
 <b>Based Laravel</b>
