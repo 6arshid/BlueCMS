@@ -32,11 +32,20 @@
 
 * `php artisan serve`
 
+first time you see this msg
+
+![BlueCMS](public/uploads/blue0.jpg)
+
+after refresh see fixed site.
+
+![BlueCMS](public/uploads/blue1.jpg)
+
+enjoy from laravel and bluecms my friend .
+
 
 <br><br>
 
 [Laravel](https://github.com/laravel/laravel)  |
 [BlueCMS](https://github.com/01mrlast/BlueCMS)
 
-![BlueCMS](public/uploads/blue0.jpg)
-![BlueCMS](public/uploads/blue1.jpg)
+
