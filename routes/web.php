@@ -19,6 +19,7 @@ Route::get('/p/{id}', 'ArticlesController@get_post_detail');
 Route::get('/pages/{page}', 'PagesContoller@get_page_detail');
 Route::get('/product/{id}', 'ProductsController@get_product_detail');
 Route::get('/shop', 'ProductsController@get_all');
+Route::get('/blog', 'ArticlesController@get_all_posts');
 
 Route::get('/hashtags/{title}', 'ArticlesController@show_hashtags_results');
 
@@ -29,13 +30,13 @@ Route::post('/articles/submit_comment_no_user', 'ArticlesController@submit_comme
 Route::get('/search', 'ArticlesController@advance');
 
 
-Route::get('/gisag', 'RootController@index');
 
 Route::get('ajaxRequest', 'AjaxController@ajaxRequest');
 Route::post('ajaxRequest', 'AjaxController@ajaxRequestPost')->name('ajaxRequest.post');
 
 
 
+Route::post('/admin/add_settingx', 'AdminController@add_setting');
 
 
 Auth::routes();
@@ -67,9 +68,6 @@ Route::get('/home/flickr/', 'HomeController@show_flicker_wall');
 
 
 
-
-Route::get('/google-login', 'GoogleAuthController@redirectToProvider');
-Route::get('/callback', 'GoogleAuthController@handleProviderCallback');
 
 
 //admin//

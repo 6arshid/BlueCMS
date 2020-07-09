@@ -1,8 +1,9 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 @import "tagsinput.css"; /* Using a string */
+@import "../style.css"; /* Using a string */
 
 .bg-turbo-pink {
-  background-color: #3f729b;
+  background-color: #017;
   color:#fff;
 }
 
@@ -23,11 +24,11 @@
 }
 
 .bg-turbo-pink-50 {
-  background-color: #3f729b;
+  background-color: #017;
 }
 
 .bg-turbo-pink-60 {
-  background-color: #3f729b;
+  background-color: #017;
 }
 
 .bg-turbo-pink-70 {
@@ -44,7 +45,6 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #fafafa;
 }
 
 p {
@@ -99,8 +99,8 @@ a:focus {
 }
 
 #sidebar {
-  min-width: 250px;
-  max-width: 250px;
+  min-width: 220px;
+  max-width: 220px;
   background: #ffffff;
   color: #231f20;
   transition: all 0.3s;
@@ -112,8 +112,8 @@ a:focus {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #3f729b;
-  color:#fff;
+  background: #017;
+  color:#fff; 
 }
 
 #sidebar ul.components {
@@ -135,14 +135,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-  color: #3f729b;
+  color: #017;
   background: #231f20;
   opacity: 0.8;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-  color: #fff;
-  background: #3f729b;
+  color: #000;
+  background: #017;
 }
 
 a[data-toggle="collapse"] {
@@ -160,7 +160,7 @@ a[data-toggle="collapse"] {
 ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
-  background: #3f729b;
+  background: #017;
 }
 
 ul.CTAs {
@@ -177,12 +177,12 @@ ul.CTAs a {
 
 a.download {
   background: #231f20;
-  color: #3f729b;
+  color: #017;
 }
 
 a.article,
 a.article:hover {
-  background: #3f729b !important;
+  background: #017 !important;
   color: #231f20 !important;
 }
 

@@ -1,0 +1,16 @@
+/* fixedsys-regular */
+@font-face {
+    font-family: 'FixedsysExcelsior301Regular';
+    font-weight: normal;
+    font-style: normal;
+    font-smooth:never;
+    src: url('../fonts/fsex300-webfont.eot'); /* IE9 Compat Modes */
+    src: local('Fixedsys-Regular'),
+        url('../fonts/fsex300-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/fsex300-webfont.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/fsex300-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('fsex300-webfont.svg#FixedsysExcelsior301Regular') format('svg'); /* Legacy iOS */
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
+}
+

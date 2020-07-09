@@ -11,8 +11,11 @@
 
 
 
-<form method="post" action="/admin/pages/add_new_page" enctype="multipart/form-data">
-    {{csrf_field()}}
+<form method="post" action="/admin/add_settingx">
+{{ csrf_field() }}
+
+@method('PATCH')
+
     <h5>Title :</h5>
     <input type="text" class="form-control btn-lg" placeholder="Please type title" value=" {{$row->title}}" name="title">
     <br>

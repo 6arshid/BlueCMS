@@ -503,17 +503,13 @@ class AdminController extends Controller
     }
 
         public function add_setting(Setting $setting,Request $request){
-        $setting_data = Setting::create([
-            'title' => $request['title'],
-            'description' =>  $request['description'],
-            'site_url' => $request['site_url'],
-            'tags' => $request['tags'],
-            'email_send' => $request['email_send'],
-            'email_received' => $request['email_received'],
-            'lang' => $request['lang'],
 
-        ]);
+        // $id = 1;
+        // $rows = Article::where('id', '=', $id)->first();
 
-        return view('admin.setting',compact('setting_data'));
+        // $rows->update($request->all());
+        
+        return view('welcome')->with('success', 'your post updated !');
+
     }
 }

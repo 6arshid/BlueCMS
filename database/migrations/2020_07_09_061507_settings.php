@@ -22,6 +22,8 @@ class Settings extends Migration
             $table->string('email_send')->nullable();;
             $table->string('email_received')->nullable();
             $table->string('lang')->nullable();
+            $table->string('homepage_txt')->default('hello world !')->nullable();
+
             $table->timestamps();
         });
     }

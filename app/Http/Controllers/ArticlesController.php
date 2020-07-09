@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Article;
 use App\Comment;
 use App\Menu;
+use App\Setting;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -162,10 +163,25 @@ class ArticlesController extends Controller
 
     public function get_all()
     {
-        $article =  Article::orderBy('id', 'DESC')->paginate(9);;
+        $article =  Article::orderBy('id', 'DESC')->paginate(9);
         $menus =  Menu::orderBy('id', 'DESC')->paginate(15);;
+        $setting =  Setting::get()->first();
+        if(empty($setting)){
+            Setting::create([
+                'title' => 'my web site',
+                'description' => 'i make this website , my personal website its good',
+                'homepage_txt' => 'my web sit'    
+        
+            ]);
+        }
+        return view('welcome', compact('article','menus','setting'));
+    }
+    public function get_all_posts()
+    {
+        $article =  Article::orderBy('id', 'DESC')->paginate(9);
+        $menus =  Menu::orderBy('id', 'DESC')->paginate(15);
 
-        return view('welcome', compact('article','menus'));
+        return view('blog', compact('article','menus'));
     }
     public function file_get_contents_curl($url)
     {

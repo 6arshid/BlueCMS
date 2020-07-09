@@ -53,11 +53,13 @@ class HomeController extends Controller
     {
         //    $x = Spotify::searchTracks('Closed on Sunday')->get();
         $setting_data =  Setting::get()->first();
-        if($setting_data == null){
-            echo "You must go to <a href='/admin/add_setting'>this address </a>for config your website";
+        if($setting_data->site_url == null){
+            $msg =  "You must go to <a href='/admin/add_setting'>this address </a>for config your website";
         }
+        $msg =  "You must go to <a href='/admin/add_setting'>this address </a>for config your website";
 
-        return view('home',compact('setting_data'));
+
+        return view('home',compact('setting_data','msg'));
     }
     public function wall()
     {

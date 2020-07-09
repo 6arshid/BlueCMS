@@ -7,11 +7,11 @@
      
             @include('flash-message')
 
-            <div class="card">
+            <div>
 
-                <h1 class="card-header"> <a href="/p/{{$article->id}}/{{$article->title}}">{{$article->title}}</a></h1>
+                <h1> <a href="/p/{{$article->id}}/{{$article->title}}">{{$article->title}}</a></h1>
 
-                <div class="card-body">
+                <div >
                     <a href="/p/{{$article->id}}"><img src="/uploads/images/{{$article->image}}" width="100%"></a>
                     <a href="/p/{{$article->id}}"> {{$article->created_at->diffForHumans()}}</a>
 

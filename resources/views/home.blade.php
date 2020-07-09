@@ -4,10 +4,10 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+            <div>
+                <div>{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
+                <div>
                     @if (session('status'))
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}
@@ -15,12 +15,7 @@
                     @endif
 
 
-@php
 
-
-var_dump($setting_data);
-
-@endphp
                     @if (auth()->check())
                     @if (auth()->user()->is_admin === 1)
                     Hello Admin You must click <a href="/admin/home">here</a> for manage website
@@ -28,6 +23,10 @@ var_dump($setting_data);
                     Hello standard user
                     @endif
                     @endif
+                    <br>
+
+                    {!!$msg!!}
+
 
                     {{ __('You are logged in!') }}
                 </div>
