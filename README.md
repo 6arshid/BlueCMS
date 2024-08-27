@@ -20,7 +20,7 @@
 
 * `cd BlueCMS`
 
-* `composer global require "laravel/installer=~1.2"`
+* `composer global require laravel/installer`
 
 * `composer update`
 
