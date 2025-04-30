@@ -16,7 +16,7 @@
 <br>
 <b>For Install BlueCMS</b> add this commend to your terminal  :
 
-* ` git clone https://github.com/01mrlast/BlueCMS BlueCMS`
+* ` git clone https://github.com/6arshid/BlueCMS BlueCMS`
 
 * `cd BlueCMS`
 
