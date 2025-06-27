@@ -16,7 +16,7 @@
 
 ## Requirements
 
-- PHP 8.1+
+- PHP 8.2+
 - Composer
 - Node.js & NPM
 - Git
@@ -115,4 +115,4 @@ Make sure to **change the password** after first login.
 
 ---
 
-Made with ❤️ using Laravel.
+Made with ❤️ using Laravel 12.
