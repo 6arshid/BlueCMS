@@ -1,5 +1,5 @@
 {
-  "name": "mrlast/bluecms",
+  "name": "6arshid/bluecms",
   "description": "BlueCMS - The Laravel Framework CMS.",
   "license": "MIT",
   "keywords": [
@@ -8,9 +8,9 @@
   ],
   "authors": [
     {
-      "name": "Samson last",
-      "email": "samson@mrlast.com",
-      "homepage": "http://mrlast.com",
+      "name": "Farshid Mahmoudi",
+      "email": "6arshid@gmail.com",
+      "homepage": "http://6arshid.click",
       "role": "Developer"
     }
   ],
@@ -56,7 +56,7 @@
     }
   },
   "type": "framework",
-  "homepage": "https://github.com/01mrlast/BlueCMS/",
+  "homepage": "https://github.com/6arshid/BlueCMS/",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "scripts": {
